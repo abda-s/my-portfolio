@@ -8,6 +8,14 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+}
+
+body{
+    color:black
+
+}
+a{
+    color:black
 
 }
 
@@ -99,6 +107,7 @@ footer li a:hover::before {
 #menu-icon {
     font-size: 2rem;
     display: none;
+    color: white;
 }
 
 
@@ -265,7 +274,7 @@ section {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -287,6 +296,7 @@ section {
     color: white;
     transform: scale(1.1);
 }
+
 
 .grid-card i {
     font-size: 1.5rem;
@@ -337,6 +347,7 @@ section {
 .project-card:hover .btn {
     border-color: white;
     color: white;
+    background: black;
 }
 
 .project-card:hover .btn:hover {
@@ -474,11 +485,11 @@ footer ul li a {
 
     .info-box input {
         padding: 1rem 2rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .input-box input::placeholder {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .name-email-con {
@@ -550,11 +561,11 @@ footer ul li a {
     .input-box input {
         padding: 0.5rem 3rem;
         width: 90%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .input-box input::placeholder {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     footer ul {
