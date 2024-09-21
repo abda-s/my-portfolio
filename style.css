@@ -210,6 +210,7 @@ section {
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
+    background: white;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -369,27 +370,34 @@ section {
 
 .input {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 
 }
 
+.name-email-con {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-box textarea,
 .input-box input {
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+}
+.input-box textarea{
+    border-radius: 2rem;
+
 }
 
 .input-box input::placeholder {
-    font-size: 3rem;
-
-}
-
-.input i {
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
+    font-size: 1rem;
 
 }
 
@@ -439,20 +447,7 @@ footer ul li a {
         flex-direction: column;
     }
 
-    .info-box input {
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
 
-    }
-
-    .input-box input::placeholder {
-        font-size: 2.5rem;
-    }
-
-    .input-box i {
-        font-size: 2.5rem;
-
-    }
 }
 
 @media(max-width:768px) {
@@ -486,8 +481,11 @@ footer ul li a {
         font-size: 1.8rem;
     }
 
-    .input-box i {
-        display: none;
+    .name-email-con {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .grid {
@@ -548,9 +546,10 @@ footer ul li a {
         width: 70vw;
     }
 
+    .input-box textarea,
     .input-box input {
         padding: 0.5rem 3rem;
-        width: 80%;
+        width: 90%;
         font-size: 1.5rem;
     }
 
